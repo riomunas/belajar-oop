@@ -19,15 +19,17 @@ class Manager extends Employee{
     }
 
     void sayHello(String friend) {
+        super.sayHello(friend);
         System.out.println(String.format("Hi. %s, My name %s and I'm a manager", friend, this.name));
     }
 }
 
 public class ManagerInheritanceApp {
     public static void main(String[] args) {
+        System.out.println("Parent ------------------------------------");
         Employee e = new Employee("Rio");
         e.sayHello("Zaid");
-
+        System.out.println("Child -------------------------------------");
         Manager m = new Manager("Rio");
         m.sayHello("Zaid");
     }
