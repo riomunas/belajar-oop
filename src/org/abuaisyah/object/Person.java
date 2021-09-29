@@ -6,15 +6,20 @@ public class Person {
     String address;
     final String nationality = "WNI";
 
-    public Person() {};
+    public Person() {
+        this(null);
+        System.out.println("~~> Constructor 1");
+    };
 
     public Person(String paramName, String paramAddress) {
+        System.out.println("~~> Constructor 3");
         name = paramName;
         address = paramAddress;
     }
 
     public Person(String paramName) {
-        name = paramName;
+        this(paramName, null);
+        System.out.println("~~> Constructor 2");
     }
 
     public void sayHello(String friend) {
