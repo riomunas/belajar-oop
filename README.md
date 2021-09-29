@@ -4,9 +4,17 @@
 
 **constructor** : 
 - method yang namanya sama dengan nama file dan jalan saat initialisasi object
-- bisa punya parameter
-- tidak punya return
-- bisa overloading
+- can have parameters
+- no return value
+- overloading enable
+- enable to call other constructor
+
+**variable shadowing** : nama parameter sama dengan nama class property
+
+**this**
+- untuk resolve masalah variable shadowing
+- untuk mengases property / method  in current  active object
+
 
 
 try to understand basic oop in java

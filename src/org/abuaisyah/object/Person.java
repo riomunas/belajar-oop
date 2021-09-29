@@ -13,8 +13,8 @@ public class Person {
 
     public Person(String paramName, String paramAddress) {
         System.out.println("~~> Constructor 3");
-        name = paramName;
-        address = paramAddress;
+        this.name = paramName;
+        this.address = paramAddress;
     }
 
     public Person(String paramName) {
