@@ -13,6 +13,10 @@ public class Person {
         address = paramAddress;
     }
 
+    public Person(String paramName) {
+        name = paramName;
+    }
+
     public void sayHello(String friend) {
         System.out.println(String.format("Hi %s, My name is %s, I'm %s and I live in %s", friend, name, nationality, address));
     }
